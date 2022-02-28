@@ -1,9 +1,9 @@
 import React from "react";
 
-function Task({ text, taskCategory, onButtonClicked }) {
+function Task({ text, taskCategory, onDelete }) {
 
   function handleClick(text) {
-    onButtonClicked(text);
+    onDelete(text);
   }
   return (
     <div className="task">
